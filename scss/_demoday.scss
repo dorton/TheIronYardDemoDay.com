@@ -217,7 +217,18 @@ p {
 .showable {
     display: none;
 }
+.grid h5 {
+    margin-top: .75em;
+    padding: .25em .75em;
+    background-color: rgba(40, 183, 103, 1);
+    color: white;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
 #min:target {
+    font-size: .75em;
     .project {
         .table > :nth-child(1) {
             display: none;
@@ -229,8 +240,10 @@ p {
     // .grid > * {
     //     font-size: .75em;
     // }
-    .grid-2-640 > * {
-        width: 33%;
+    @media (min-width: 800px){
+        .grid-2-640 > * {
+            width: 33%;
+        }
     }
     .hideable {
         display: none;

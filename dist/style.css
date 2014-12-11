@@ -1041,17 +1041,30 @@ p {
 .showable {
   display: none; }
 
-#min:target .project .table > :nth-child(1) {
-  display: none; }
-#min:target .project .table > :nth-child(2) {
-  width: 100%; }
-#min:target .grid-2-640 > * {
-  width: 33%; }
-#min:target .hideable {
-  display: none; }
-#min:target .showable {
-  display: block; }
-#min:target .vslide {
-  min-height: 0px; }
-#min:target .logotype-area {
-  width: 100% !important; }
+.grid h5 {
+  margin-top: 0.75em;
+  padding: 0.25em 0.75em;
+  background-color: #28b767;
+  color: white; }
+  .grid h5 a {
+    color: white;
+    text-decoration: none; }
+
+#min:target {
+  font-size: 0.75em; }
+  #min:target .project .table > :nth-child(1) {
+    display: none; }
+  #min:target .project .table > :nth-child(2) {
+    width: 100%; }
+  @media (min-width: 800px) {
+    #min:target .grid-2-640 > * {
+      width: 33%; }
+ }
+  #min:target .hideable {
+    display: none; }
+  #min:target .showable {
+    display: block; }
+  #min:target .vslide {
+    min-height: 0px; }
+  #min:target .logotype-area {
+    width: 100% !important; }
