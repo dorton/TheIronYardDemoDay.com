@@ -1,5 +1,7 @@
+@import "./_normalize.scss";
+@import "./_typeplate.scss";
 
-@mixin gridify($col, $width, $gutter: 2) {
+@mixin gridify($col, $width, $gutter: 0) {
     @media only screen and (min-width: #{$width}#{"px"}){
         .grid-#{$col}-#{$width} {
             & > * {
@@ -45,6 +47,7 @@
 }
 
 @include gridify(2, 400);
+@include gridify(2, 640);
 @include gridify(4, 600);
 
 /**
@@ -54,4 +57,5 @@
 body {
     transition: opacity .25s ease;
 }
-    
+
+@import "./_demoday.scss";
